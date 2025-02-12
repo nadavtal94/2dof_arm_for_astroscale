@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: tow_dof_description
+    relative_path: urdf/dof2.urdf
+  srdf:
+    relative_path: config/tow_dof.srdf
+  package_settings:
+    author_name: nadav_tal
+    author_email: nadavtal94@gmail.com
+    generated_timestamp: 1738844489
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

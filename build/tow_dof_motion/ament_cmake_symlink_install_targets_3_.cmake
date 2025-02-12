@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros/tow_dof_ws/build/tow_dof_motion/motion_node" "/home/ros/tow_dof_ws/build/tow_dof_motion/move_to_position" "TARGETS" "motion_node" "move_to_position" "DESTINATION" "lib/tow_dof_motion")

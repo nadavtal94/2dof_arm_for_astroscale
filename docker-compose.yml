@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  tow_dof_ros:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: tow_dof_ros_container
+    image: ros2_humble_dev
+    restart: unless-stopped
+    volumes:
+      - "C:/Users/nadav/tow_dof_pro:/home/ros/tow_dof_ws"
+    working_dir: "/home/ros/tow_dof_ws"
+    stdin_open: true
+    tty: true
+    entrypoint: ["/entrypoint.sh"]

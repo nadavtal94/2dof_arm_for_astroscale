@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ros/tow_dof_ws/build/tow_dof_motion/rosidl_generator_py/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "tow_dof_motion__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/tow_dof_motion")

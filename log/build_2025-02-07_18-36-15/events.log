@@ -1,0 +1,1027 @@
+[0.000000] (-) TimerEvent: {}
+[0.000652] (tow_dof_description) JobQueued: {'identifier': 'tow_dof_description', 'dependencies': OrderedDict()}
+[0.001069] (tow_dof_motion) JobQueued: {'identifier': 'tow_dof_motion', 'dependencies': OrderedDict()}
+[0.001428] (tow_dof_moveit_config) JobQueued: {'identifier': 'tow_dof_moveit_config', 'dependencies': OrderedDict([('tow_dof_description', '/home/ros/tow_dof_ws/install/tow_dof_description')])}
+[0.001729] (tow_dof_description) JobStarted: {'identifier': 'tow_dof_description'}
+[0.034405] (tow_dof_motion) JobStarted: {'identifier': 'tow_dof_motion'}
+[0.063872] (tow_dof_description) JobProgress: {'identifier': 'tow_dof_description', 'progress': 'cmake'}
+[0.068662] (tow_dof_description) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/tow_dof_ws/src/tow_dof_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ros/tow_dof_ws/install/tow_dof_description'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_description', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[0.086697] (tow_dof_motion) JobProgress: {'identifier': 'tow_dof_motion', 'progress': 'cmake'}
+[0.092266] (tow_dof_motion) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/tow_dof_ws/src/tow_dof_motion', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ros/tow_dof_ws/install/tow_dof_motion'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_motion', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_motion'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[0.103339] (-) TimerEvent: {}
+[0.203847] (-) TimerEvent: {}
+[0.304330] (-) TimerEvent: {}
+[0.404938] (-) TimerEvent: {}
+[0.429903] (tow_dof_motion) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.439843] (tow_dof_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.505059] (-) TimerEvent: {}
+[0.605576] (-) TimerEvent: {}
+[0.667001] (tow_dof_motion) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.683951] (tow_dof_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.705691] (-) TimerEvent: {}
+[0.728912] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.740430] (tow_dof_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.805952] (-) TimerEvent: {}
+[0.907458] (-) TimerEvent: {}
+[1.008098] (-) TimerEvent: {}
+[1.108635] (-) TimerEvent: {}
+[1.209161] (-) TimerEvent: {}
+[1.309782] (-) TimerEvent: {}
+[1.403585] (tow_dof_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.409899] (-) TimerEvent: {}
+[1.415919] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.427214] (tow_dof_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.428598] (tow_dof_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.429670] (tow_dof_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.441947] (tow_dof_motion) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.442818] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.443817] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.477981] (tow_dof_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.490420] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.510022] (-) TimerEvent: {}
+[1.610531] (-) TimerEvent: {}
+[1.711088] (-) TimerEvent: {}
+[1.811601] (-) TimerEvent: {}
+[1.912112] (-) TimerEvent: {}
+[2.012676] (-) TimerEvent: {}
+[2.059813] (tow_dof_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.080958] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.097893] (tow_dof_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.099521] (tow_dof_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.101324] (tow_dof_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.112816] (-) TimerEvent: {}
+[2.140321] (tow_dof_motion) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.141762] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.143030] (tow_dof_motion) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.189753] (tow_dof_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.212946] (-) TimerEvent: {}
+[2.213382] (tow_dof_motion) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.313061] (-) TimerEvent: {}
+[2.413577] (-) TimerEvent: {}
+[2.503956] (tow_dof_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.511858] (tow_dof_motion) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.513660] (-) TimerEvent: {}
+[2.614189] (-) TimerEvent: {}
+[2.649212] (tow_dof_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.660859] (tow_dof_motion) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.714330] (-) TimerEvent: {}
+[2.808559] (tow_dof_description) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[2.814439] (-) TimerEvent: {}
+[2.819832] (tow_dof_motion) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.914552] (-) TimerEvent: {}
+[2.916372] (tow_dof_motion) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.927760] (tow_dof_motion) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.944810] (tow_dof_motion) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.969454] (tow_dof_motion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.000418] (tow_dof_motion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.014690] (-) TimerEvent: {}
+[3.096214] (tow_dof_motion) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.107504] (tow_dof_motion) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.114839] (-) TimerEvent: {}
+[3.215407] (-) TimerEvent: {}
+[3.316002] (-) TimerEvent: {}
+[3.344716] (tow_dof_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.416128] (-) TimerEvent: {}
+[3.516617] (-) TimerEvent: {}
+[3.562790] (tow_dof_description) StdoutLine: {'line': b'-- Generating done\n'}
+[3.594748] (tow_dof_motion) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.616803] (-) TimerEvent: {}
+[3.624572] (tow_dof_description) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/tow_dof_ws/build/tow_dof_description\n'}
+[3.630197] (tow_dof_description) CommandEnded: {'returncode': 0}
+[3.634897] (tow_dof_description) JobProgress: {'identifier': 'tow_dof_description', 'progress': 'build'}
+[3.641153] (tow_dof_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/tow_dof_ws/build/tow_dof_description', '--', '-j8', '-l8'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_description', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[3.683498] (tow_dof_motion) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.716927] (-) TimerEvent: {}
+[3.767109] (tow_dof_motion) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.773159] (tow_dof_description) CommandEnded: {'returncode': 0}
+[3.812546] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[3.817037] (-) TimerEvent: {}
+[3.917560] (-) TimerEvent: {}
+[3.964545] (tow_dof_description) JobProgress: {'identifier': 'tow_dof_description', 'progress': 'install'}
+[3.984878] (tow_dof_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/tow_dof_ws/build/tow_dof_description'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_description', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_description'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[3.998223] (tow_dof_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.005441] (tow_dof_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.017682] (-) TimerEvent: {}
+[4.053282] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/urdf/common_properties.xacro\n'}
+[4.098449] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/urdf/dof2.urdf\n'}
+[4.117847] (-) TimerEvent: {}
+[4.142343] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/urdf/dof2.urdf.xacro\n'}
+[4.189669] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/urdf/gripper.xacro\n'}
+[4.217978] (-) TimerEvent: {}
+[4.237823] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/urdf/mobile_base.xacro\n'}
+[4.299525] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/rviz/tow_dof_config.rviz\n'}
+[4.318120] (-) TimerEvent: {}
+[4.329978] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.339828] (tow_dof_motion) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.346793] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/rviz/tow_dof_moveit_config.rviz\n'}
+[4.418485] (-) TimerEvent: {}
+[4.425594] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/config/ros2_controllers.yaml\n'}
+[4.504889] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/launch/display.launch.py\n'}
+[4.518665] (-) TimerEvent: {}
+[4.566045] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/ament_index/resource_index/package_run_dependencies/tow_dof_description\n'}
+[4.618871] (-) TimerEvent: {}
+[4.640261] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/ament_index/resource_index/parent_prefix_path/tow_dof_description\n'}
+[4.694824] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/environment/ament_prefix_path.sh\n'}
+[4.719009] (-) TimerEvent: {}
+[4.747227] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/environment/ament_prefix_path.dsv\n'}
+[4.805006] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/environment/path.sh\n'}
+[4.819233] (-) TimerEvent: {}
+[4.874106] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/environment/path.dsv\n'}
+[4.919369] (-) TimerEvent: {}
+[4.928600] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/local_setup.bash\n'}
+[4.939337] (tow_dof_motion) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.945406] (tow_dof_motion) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.972264] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/local_setup.sh\n'}
+[5.009405] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/local_setup.zsh\n'}
+[5.019554] (-) TimerEvent: {}
+[5.063315] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/local_setup.dsv\n'}
+[5.102834] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/package.dsv\n'}
+[5.119691] (-) TimerEvent: {}
+[5.145302] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/ament_index/resource_index/packages/tow_dof_description\n'}
+[5.166438] (tow_dof_motion) StdoutLine: {'line': b'-- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)\n'}
+[5.183135] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/cmake/tow_dof_descriptionConfig.cmake\n'}
+[5.219824] (-) TimerEvent: {}
+[5.224516] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/cmake/tow_dof_descriptionConfig-version.cmake\n'}
+[5.246287] (tow_dof_motion) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[5.256003] (tow_dof_description) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_description/share/tow_dof_description/package.xml\n'}
+[5.279396] (tow_dof_description) CommandEnded: {'returncode': 0}
+[5.297406] (tow_dof_motion) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.7 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[5.319949] (-) TimerEvent: {}
+[5.420642] (-) TimerEvent: {}
+[5.441225] (tow_dof_motion) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[5.520775] (-) TimerEvent: {}
+[5.621251] (-) TimerEvent: {}
+[5.721755] (-) TimerEvent: {}
+[5.810445] (tow_dof_description) JobEnded: {'identifier': 'tow_dof_description', 'rc': 0}
+[5.820293] (tow_dof_moveit_config) JobStarted: {'identifier': 'tow_dof_moveit_config'}
+[5.821890] (-) TimerEvent: {}
+[5.877176] (tow_dof_motion) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[5.890323] (tow_dof_moveit_config) JobProgress: {'identifier': 'tow_dof_moveit_config', 'progress': 'cmake'}
+[5.896019] (tow_dof_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ros/tow_dof_ws/install/tow_dof_moveit_config'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_moveit_config', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_moveit_config'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[5.922013] (-) TimerEvent: {}
+[6.022503] (-) TimerEvent: {}
+[6.123044] (-) TimerEvent: {}
+[6.147894] (tow_dof_moveit_config) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.223176] (-) TimerEvent: {}
+[6.323696] (-) TimerEvent: {}
+[6.356292] (tow_dof_moveit_config) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[6.408705] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.423845] (-) TimerEvent: {}
+[6.496349] (tow_dof_motion) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[6.523989] (-) TimerEvent: {}
+[6.624539] (-) TimerEvent: {}
+[6.644625] (tow_dof_motion) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[6.682535] (tow_dof_motion) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[6.724670] (-) TimerEvent: {}
+[6.825182] (-) TimerEvent: {}
+[6.829239] (tow_dof_motion) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[6.924083] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.925268] (-) TimerEvent: {}
+[6.949368] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.950446] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.951698] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.002079] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.025391] (-) TimerEvent: {}
+[7.125878] (-) TimerEvent: {}
+[7.226422] (-) TimerEvent: {}
+[7.326953] (-) TimerEvent: {}
+[7.427477] (-) TimerEvent: {}
+[7.468055] (tow_dof_motion) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[7.518856] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.527608] (-) TimerEvent: {}
+[7.543992] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.545222] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.546390] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.600104] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[7.620979] (tow_dof_motion) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[7.627701] (-) TimerEvent: {}
+[7.728129] (-) TimerEvent: {}
+[7.828572] (-) TimerEvent: {}
+[7.835925] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[7.928719] (-) TimerEvent: {}
+[7.964741] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[8.028877] (-) TimerEvent: {}
+[8.129440] (-) TimerEvent: {}
+[8.229921] (-) TimerEvent: {}
+[8.330449] (-) TimerEvent: {}
+[8.371697] (tow_dof_motion) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[8.430563] (-) TimerEvent: {}
+[8.483155] (tow_dof_motion) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[8.530699] (-) TimerEvent: {}
+[8.598764] (tow_dof_motion) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[8.630851] (-) TimerEvent: {}
+[8.731443] (-) TimerEvent: {}
+[8.733892] (tow_dof_motion) StdoutLine: {'line': b'-- Found moveit_visual_tools: 4.1.1 (/opt/ros/humble/share/moveit_visual_tools/cmake)\n'}
+[8.831593] (-) TimerEvent: {}
+[8.842143] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.931726] (-) TimerEvent: {}
+[9.032223] (-) TimerEvent: {}
+[9.087326] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Generating done\n'}
+[9.132351] (-) TimerEvent: {}
+[9.144806] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/tow_dof_ws/build/tow_dof_moveit_config\n'}
+[9.149803] (tow_dof_moveit_config) CommandEnded: {'returncode': 0}
+[9.154028] (tow_dof_moveit_config) JobProgress: {'identifier': 'tow_dof_moveit_config', 'progress': 'build'}
+[9.156111] (tow_dof_motion) StdoutLine: {'line': b"-- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'\n"}
+[9.158470] (tow_dof_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/tow_dof_ws/build/tow_dof_moveit_config', '--', '-j8', '-l8'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_moveit_config', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_moveit_config'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[9.232504] (-) TimerEvent: {}
+[9.266215] (tow_dof_moveit_config) CommandEnded: {'returncode': 0}
+[9.267712] (tow_dof_motion) StdoutLine: {'line': b"-- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'\n"}
+[9.269715] (tow_dof_motion) StdoutLine: {'line': b'-- Found OGRE\n'}
+[9.271634] (tow_dof_motion) StdoutLine: {'line': b'--   static     : OFF\n'}
+[9.272322] (tow_dof_motion) StdoutLine: {'line': b'--   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume\n'}
+[9.273005] (tow_dof_motion) StdoutLine: {'line': b'--   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[9.273711] (tow_dof_motion) StdoutLine: {'line': b'--   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media\n'}
+[9.274317] (tow_dof_motion) StdoutLine: {'line': b'-- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain\n'}
+[9.274899] (tow_dof_motion) StdoutLine: {'line': b'-- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib\n'}
+[9.275466] (tow_dof_motion) StdoutLine: {'line': b'-- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI\n'}
+[9.276030] (tow_dof_motion) StdoutLine: {'line': b'-- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE\n'}
+[9.276631] (tow_dof_motion) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[9.277235] (tow_dof_motion) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so\n'}
+[9.277824] (tow_dof_motion) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[9.278451] (tow_dof_motion) StdoutLine: {'line': b'-- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so\n'}
+[9.332604] (-) TimerEvent: {}
+[9.347915] (tow_dof_moveit_config) JobProgress: {'identifier': 'tow_dof_moveit_config', 'progress': 'install'}
+[9.357836] (tow_dof_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/tow_dof_ws/build/tow_dof_moveit_config'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_moveit_config', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_moveit_config'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[9.372788] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.381148] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.400818] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/ament_index/resource_index/package_run_dependencies/tow_dof_moveit_config\n'}
+[9.432747] (-) TimerEvent: {}
+[9.456041] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/ament_index/resource_index/parent_prefix_path/tow_dof_moveit_config\n'}
+[9.479367] (tow_dof_motion) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[9.501749] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/ament_prefix_path.sh\n'}
+[9.529430] (tow_dof_motion) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   \n'}
+[9.532883] (-) TimerEvent: {}
+[9.535737] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/ament_prefix_path.dsv\n'}
+[9.573815] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/path.sh\n'}
+[9.604732] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/path.dsv\n'}
+[9.633019] (-) TimerEvent: {}
+[9.637471] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.bash\n'}
+[9.670953] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.sh\n'}
+[9.698940] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.zsh\n'}
+[9.725545] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.dsv\n'}
+[9.733182] (-) TimerEvent: {}
+[9.758294] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/package.dsv\n'}
+[9.799255] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/ament_index/resource_index/packages/tow_dof_moveit_config\n'}
+[9.833331] (-) TimerEvent: {}
+[9.890828] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/cmake/tow_dof_moveit_configConfig.cmake\n'}
+[9.923313] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/cmake/tow_dof_moveit_configConfig-version.cmake\n'}
+[9.933459] (-) TimerEvent: {}
+[9.956201] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/package.xml\n'}
+[10.033581] (-) TimerEvent: {}
+[10.059597] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/demo.launch.py\n'}
+[10.091224] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/move_group.launch.py\n'}
+[10.124936] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/moveit_rviz.launch.py\n'}
+[10.133716] (-) TimerEvent: {}
+[10.159324] (tow_dof_motion) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[10.160164] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[10.162876] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/rsp.launch.py\n'}
+[10.208564] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/setup_assistant.launch.py\n'}
+[10.233867] (-) TimerEvent: {}
+[10.268065] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/spawn_controllers.launch.py\n'}
+[10.317444] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/static_virtual_joint_tfs.launch.py\n'}
+[10.333987] (-) TimerEvent: {}
+[10.361478] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/warehouse_db.launch.py\n'}
+[10.434107] (-) TimerEvent: {}
+[10.441079] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/initial_positions.yaml\n'}
+[10.484156] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/joint_limits.yaml\n'}
+[10.521686] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/kinematics.yaml\n'}
+[10.534227] (-) TimerEvent: {}
+[10.573007] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/moveit.rviz\n'}
+[10.619892] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/moveit_controllers.yaml\n'}
+[10.634372] (-) TimerEvent: {}
+[10.669310] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[10.684002] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[10.687423] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[10.713131] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/ros2_controllers.yaml\n'}
+[10.734500] (-) TimerEvent: {}
+[10.763824] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/sensors_3d.yaml\n'}
+[10.819718] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/tow_dof.ros2_control.xacro\n'}
+[10.834631] (-) TimerEvent: {}
+[10.865743] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/tow_dof.srdf\n'}
+[10.904827] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/tow_dof.urdf.xacro\n'}
+[10.934755] (-) TimerEvent: {}
+[10.943619] (tow_dof_moveit_config) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/.setup_assistant\n'}
+[10.978710] (tow_dof_moveit_config) CommandEnded: {'returncode': 0}
+[11.034876] (-) TimerEvent: {}
+[11.135346] (-) TimerEvent: {}
+[11.159605] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[11.163355] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for connect\n'}
+[11.235508] (-) TimerEvent: {}
+[11.336350] (-) TimerEvent: {}
+[11.437003] (-) TimerEvent: {}
+[11.537945] (-) TimerEvent: {}
+[11.638473] (-) TimerEvent: {}
+[11.680708] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[11.684182] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for remove\n'}
+[11.712838] (tow_dof_moveit_config) JobEnded: {'identifier': 'tow_dof_moveit_config', 'rc': 0}
+[11.738609] (-) TimerEvent: {}
+[11.839113] (-) TimerEvent: {}
+[11.939728] (-) TimerEvent: {}
+[12.040387] (-) TimerEvent: {}
+[12.141046] (-) TimerEvent: {}
+[12.241728] (-) TimerEvent: {}
+[12.281278] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[12.284865] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[12.341864] (-) TimerEvent: {}
+[12.442421] (-) TimerEvent: {}
+[12.542998] (-) TimerEvent: {}
+[12.643596] (-) TimerEvent: {}
+[12.744084] (-) TimerEvent: {}
+[12.833009] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[12.836841] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[12.844202] (-) TimerEvent: {}
+[12.944693] (-) TimerEvent: {}
+[13.045284] (-) TimerEvent: {}
+[13.145779] (-) TimerEvent: {}
+[13.246305] (-) TimerEvent: {}
+[13.346758] (-) TimerEvent: {}
+[13.378260] (tow_dof_motion) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[13.446880] (-) TimerEvent: {}
+[13.547341] (-) TimerEvent: {}
+[13.647755] (-) TimerEvent: {}
+[13.748232] (-) TimerEvent: {}
+[13.848645] (-) TimerEvent: {}
+[13.949137] (-) TimerEvent: {}
+[14.049836] (-) TimerEvent: {}
+[14.150280] (-) TimerEvent: {}
+[14.250745] (-) TimerEvent: {}
+[14.351196] (-) TimerEvent: {}
+[14.451679] (-) TimerEvent: {}
+[14.552444] (-) TimerEvent: {}
+[14.653142] (-) TimerEvent: {}
+[14.753645] (-) TimerEvent: {}
+[14.854290] (-) TimerEvent: {}
+[14.954874] (-) TimerEvent: {}
+[15.055366] (-) TimerEvent: {}
+[15.155846] (-) TimerEvent: {}
+[15.256321] (-) TimerEvent: {}
+[15.356781] (-) TimerEvent: {}
+[15.457283] (-) TimerEvent: {}
+[15.557829] (-) TimerEvent: {}
+[15.658385] (-) TimerEvent: {}
+[15.750786] (tow_dof_motion) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[15.758512] (-) TimerEvent: {}
+[15.858978] (-) TimerEvent: {}
+[15.959505] (-) TimerEvent: {}
+[16.059953] (-) TimerEvent: {}
+[16.160410] (-) TimerEvent: {}
+[16.260893] (-) TimerEvent: {}
+[16.361378] (-) TimerEvent: {}
+[16.461848] (-) TimerEvent: {}
+[16.562342] (-) TimerEvent: {}
+[16.662880] (-) TimerEvent: {}
+[16.763350] (-) TimerEvent: {}
+[16.863826] (-) TimerEvent: {}
+[16.964274] (-) TimerEvent: {}
+[17.064783] (-) TimerEvent: {}
+[17.165436] (-) TimerEvent: {}
+[17.265869] (-) TimerEvent: {}
+[17.366404] (-) TimerEvent: {}
+[17.466892] (-) TimerEvent: {}
+[17.567423] (-) TimerEvent: {}
+[17.667916] (-) TimerEvent: {}
+[17.768417] (-) TimerEvent: {}
+[17.868958] (-) TimerEvent: {}
+[17.969420] (-) TimerEvent: {}
+[18.069882] (-) TimerEvent: {}
+[18.170360] (-) TimerEvent: {}
+[18.270993] (-) TimerEvent: {}
+[18.371475] (-) TimerEvent: {}
+[18.472028] (-) TimerEvent: {}
+[18.572526] (-) TimerEvent: {}
+[18.673060] (-) TimerEvent: {}
+[18.773564] (-) TimerEvent: {}
+[18.874071] (-) TimerEvent: {}
+[18.974591] (-) TimerEvent: {}
+[19.075192] (-) TimerEvent: {}
+[19.175925] (-) TimerEvent: {}
+[19.276623] (-) TimerEvent: {}
+[19.377084] (-) TimerEvent: {}
+[19.477524] (-) TimerEvent: {}
+[19.578002] (-) TimerEvent: {}
+[19.678482] (-) TimerEvent: {}
+[19.778968] (-) TimerEvent: {}
+[19.879443] (-) TimerEvent: {}
+[19.979957] (-) TimerEvent: {}
+[20.080423] (-) TimerEvent: {}
+[20.180931] (-) TimerEvent: {}
+[20.281688] (-) TimerEvent: {}
+[20.382364] (-) TimerEvent: {}
+[20.483022] (-) TimerEvent: {}
+[20.583587] (-) TimerEvent: {}
+[20.684096] (-) TimerEvent: {}
+[20.784610] (-) TimerEvent: {}
+[20.885059] (-) TimerEvent: {}
+[20.985616] (-) TimerEvent: {}
+[21.086121] (-) TimerEvent: {}
+[21.186592] (-) TimerEvent: {}
+[21.252516] (tow_dof_motion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.286721] (-) TimerEvent: {}
+[21.387365] (-) TimerEvent: {}
+[21.487894] (-) TimerEvent: {}
+[21.588442] (-) TimerEvent: {}
+[21.689082] (-) TimerEvent: {}
+[21.793919] (-) TimerEvent: {}
+[21.894433] (-) TimerEvent: {}
+[21.994936] (-) TimerEvent: {}
+[22.095494] (-) TimerEvent: {}
+[22.196479] (-) TimerEvent: {}
+[22.297159] (-) TimerEvent: {}
+[22.397756] (-) TimerEvent: {}
+[22.498359] (-) TimerEvent: {}
+[22.599075] (-) TimerEvent: {}
+[22.699642] (-) TimerEvent: {}
+[22.800167] (-) TimerEvent: {}
+[22.900653] (-) TimerEvent: {}
+[23.001237] (-) TimerEvent: {}
+[23.101730] (-) TimerEvent: {}
+[23.202359] (-) TimerEvent: {}
+[23.303003] (-) TimerEvent: {}
+[23.403477] (-) TimerEvent: {}
+[23.503996] (-) TimerEvent: {}
+[23.541859] (tow_dof_motion) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[23.604107] (-) TimerEvent: {}
+[23.623087] (tow_dof_motion) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[23.688731] (tow_dof_motion) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[23.704242] (-) TimerEvent: {}
+[23.804841] (-) TimerEvent: {}
+[23.811131] (tow_dof_motion) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[23.811938] (tow_dof_motion) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[23.812822] (tow_dof_motion) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[23.813652] (tow_dof_motion) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[23.854126] (tow_dof_motion) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[23.904968] (-) TimerEvent: {}
+[24.005672] (-) TimerEvent: {}
+[24.106204] (-) TimerEvent: {}
+[24.206744] (-) TimerEvent: {}
+[24.307256] (-) TimerEvent: {}
+[24.407884] (-) TimerEvent: {}
+[24.508376] (-) TimerEvent: {}
+[24.609040] (-) TimerEvent: {}
+[24.709553] (-) TimerEvent: {}
+[24.810051] (-) TimerEvent: {}
+[24.910673] (-) TimerEvent: {}
+[25.011212] (-) TimerEvent: {}
+[25.111731] (-) TimerEvent: {}
+[25.212176] (-) TimerEvent: {}
+[25.312653] (-) TimerEvent: {}
+[25.413224] (-) TimerEvent: {}
+[25.513711] (-) TimerEvent: {}
+[25.614139] (-) TimerEvent: {}
+[25.714649] (-) TimerEvent: {}
+[25.815169] (-) TimerEvent: {}
+[25.915779] (-) TimerEvent: {}
+[26.007753] (tow_dof_motion) StdoutLine: {'line': b'-- Configuring done\n'}
+[26.015924] (-) TimerEvent: {}
+[26.116577] (-) TimerEvent: {}
+[26.217084] (-) TimerEvent: {}
+[26.317635] (-) TimerEvent: {}
+[26.418077] (-) TimerEvent: {}
+[26.518641] (-) TimerEvent: {}
+[26.619199] (-) TimerEvent: {}
+[26.719792] (-) TimerEvent: {}
+[26.820374] (-) TimerEvent: {}
+[26.920902] (-) TimerEvent: {}
+[27.021427] (-) TimerEvent: {}
+[27.121918] (-) TimerEvent: {}
+[27.222410] (-) TimerEvent: {}
+[27.322994] (-) TimerEvent: {}
+[27.423513] (-) TimerEvent: {}
+[27.524084] (-) TimerEvent: {}
+[27.624599] (-) TimerEvent: {}
+[27.725109] (-) TimerEvent: {}
+[27.825701] (-) TimerEvent: {}
+[27.926286] (-) TimerEvent: {}
+[28.026838] (-) TimerEvent: {}
+[28.127312] (-) TimerEvent: {}
+[28.193899] (tow_dof_motion) StdoutLine: {'line': b'-- Generating done\n'}
+[28.227426] (-) TimerEvent: {}
+[28.327911] (-) TimerEvent: {}
+[28.428476] (-) TimerEvent: {}
+[28.448681] (tow_dof_motion) StdoutLine: {'line': b'-- Build files have been written to: /home/ros/tow_dof_ws/build/tow_dof_motion\n'}
+[28.473646] (tow_dof_motion) CommandEnded: {'returncode': 0}
+[28.481130] (tow_dof_motion) JobProgress: {'identifier': 'tow_dof_motion', 'progress': 'build'}
+[28.491288] (tow_dof_motion) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ros/tow_dof_ws/build/tow_dof_motion', '--', '-j8', '-l8'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_motion', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_motion'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[28.528615] (-) TimerEvent: {}
+[28.629166] (-) TimerEvent: {}
+[28.729825] (-) TimerEvent: {}
+[28.780539] (tow_dof_motion) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[28.817222] (tow_dof_motion) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[28.826456] (tow_dof_motion) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_tow_dof_motion\n'}
+[28.829950] (-) TimerEvent: {}
+[28.930505] (-) TimerEvent: {}
+[29.031110] (-) TimerEvent: {}
+[29.131670] (-) TimerEvent: {}
+[29.232205] (-) TimerEvent: {}
+[29.320583] (tow_dof_motion) StdoutLine: {'line': b'running egg_info\n'}
+[29.322083] (tow_dof_motion) StdoutLine: {'line': b'creating tow_dof_motion.egg-info\n'}
+[29.324579] (tow_dof_motion) StdoutLine: {'line': b'writing tow_dof_motion.egg-info/PKG-INFO\n'}
+[29.328965] (tow_dof_motion) StdoutLine: {'line': b'writing dependency_links to tow_dof_motion.egg-info/dependency_links.txt\n'}
+[29.332349] (-) TimerEvent: {}
+[29.335718] (tow_dof_motion) StdoutLine: {'line': b'writing top-level names to tow_dof_motion.egg-info/top_level.txt\n'}
+[29.341191] (tow_dof_motion) StdoutLine: {'line': b"writing manifest file 'tow_dof_motion.egg-info/SOURCES.txt'\n"}
+[29.369375] (tow_dof_motion) StdoutLine: {'line': b"reading manifest file 'tow_dof_motion.egg-info/SOURCES.txt'\n"}
+[29.395226] (tow_dof_motion) StdoutLine: {'line': b"writing manifest file 'tow_dof_motion.egg-info/SOURCES.txt'\n"}
+[29.432507] (-) TimerEvent: {}
+[29.486232] (tow_dof_motion) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_tow_dof_motion_egg\n'}
+[29.532650] (-) TimerEvent: {}
+[29.533322] (tow_dof_motion) StdoutLine: {'line': b'[  4%] Built target tow_dof_motion__cpp\n'}
+[29.594020] (tow_dof_motion) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[29.602913] (tow_dof_motion) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[29.604775] (tow_dof_motion) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[29.632811] (-) TimerEvent: {}
+[29.678002] (tow_dof_motion) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_c.dir/rosidl_generator_c/tow_dof_motion/msg/detail/joint_command__functions.c.o\x1b[0m\n'}
+[29.691054] (tow_dof_motion) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_c.dir/rosidl_generator_c/tow_dof_motion/srv/detail/setfloat64__functions.c.o\x1b[0m\n'}
+[29.732962] (-) TimerEvent: {}
+[29.833606] (-) TimerEvent: {}
+[29.934374] (-) TimerEvent: {}
+[29.967082] (tow_dof_motion) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libtow_dof_motion__rosidl_generator_c.so\x1b[0m\n'}
+[30.034526] (-) TimerEvent: {}
+[30.135073] (-) TimerEvent: {}
+[30.193887] (tow_dof_motion) StdoutLine: {'line': b'[ 18%] Built target tow_dof_motion__rosidl_generator_c\n'}
+[30.235211] (-) TimerEvent: {}
+[30.270775] (tow_dof_motion) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tow_dof_motion/msg/joint_command__type_support.cpp.o\x1b[0m\n'}
+[30.275032] (tow_dof_motion) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[30.277292] (tow_dof_motion) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[30.289707] (tow_dof_motion) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tow_dof_motion/srv/setfloat64__type_support.cpp.o\x1b[0m\n'}
+[30.292209] (tow_dof_motion) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[30.335358] (-) TimerEvent: {}
+[30.436139] (-) TimerEvent: {}
+[30.515257] (tow_dof_motion) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tow_dof_motion/srv/detail/setfloat64__type_support.cpp.o\x1b[0m\n'}
+[30.536290] (-) TimerEvent: {}
+[30.538359] (tow_dof_motion) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tow_dof_motion/msg/detail/joint_command__type_support.cpp.o\x1b[0m\n'}
+[30.636453] (-) TimerEvent: {}
+[30.658875] (tow_dof_motion) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tow_dof_motion/msg/detail/dds_fastrtps/joint_command__type_support.cpp.o\x1b[0m\n'}
+[30.736617] (-) TimerEvent: {}
+[30.838383] (-) TimerEvent: {}
+[30.939742] (-) TimerEvent: {}
+[31.041015] (-) TimerEvent: {}
+[31.141810] (-) TimerEvent: {}
+[31.222274] (tow_dof_motion) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_c.dir/rosidl_typesupport_c/tow_dof_motion/msg/joint_command__type_support.cpp.o\x1b[0m\n'}
+[31.241909] (-) TimerEvent: {}
+[31.335356] (tow_dof_motion) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_c.dir/rosidl_typesupport_c/tow_dof_motion/srv/setfloat64__type_support.cpp.o\x1b[0m\n'}
+[31.342100] (-) TimerEvent: {}
+[31.395172] (tow_dof_motion) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[31.442276] (-) TimerEvent: {}
+[31.525262] (tow_dof_motion) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tow_dof_motion/msg/detail/joint_command__type_support.c.o\x1b[0m\n'}
+[31.542436] (-) TimerEvent: {}
+[31.551183] (tow_dof_motion) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tow_dof_motion/msg/detail/joint_command__type_support_c.cpp.o\x1b[0m\n'}
+[31.587771] (tow_dof_motion) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tow_dof_motion/srv/detail/setfloat64__type_support_c.cpp.o\x1b[0m\n'}
+[31.642581] (-) TimerEvent: {}
+[31.713572] (tow_dof_motion) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_c.so\x1b[0m\n'}
+[31.715647] (tow_dof_motion) StdoutLine: {'line': b'[ 53%] Built target tow_dof_motion__rosidl_typesupport_cpp\n'}
+[31.742782] (-) TimerEvent: {}
+[31.772275] (tow_dof_motion) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tow_dof_motion/srv/detail/dds_fastrtps/setfloat64__type_support.cpp.o\x1b[0m\n'}
+[31.843132] (-) TimerEvent: {}
+[31.943963] (-) TimerEvent: {}
+[32.032076] (tow_dof_motion) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tow_dof_motion/srv/detail/setfloat64__type_support.c.o\x1b[0m\n'}
+[32.044293] (-) TimerEvent: {}
+[32.067714] (tow_dof_motion) StdoutLine: {'line': b'[ 58%] Built target tow_dof_motion__rosidl_typesupport_c\n'}
+[32.144405] (-) TimerEvent: {}
+[32.245675] (-) TimerEvent: {}
+[32.274969] (tow_dof_motion) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[32.345856] (-) TimerEvent: {}
+[32.371711] (tow_dof_motion) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/motion_node.dir/src/motion_node.cpp.o\x1b[0m\n'}
+[32.435186] (tow_dof_motion) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/move_to_position.dir/src/move_to_position.cpp.o\x1b[0m\n'}
+[32.446031] (-) TimerEvent: {}
+[32.547018] (-) TimerEvent: {}
+[32.648858] (-) TimerEvent: {}
+[32.678649] (tow_dof_motion) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking C shared library libtow_dof_motion__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[32.749005] (-) TimerEvent: {}
+[32.790340] (tow_dof_motion) StdoutLine: {'line': b'[ 67%] Built target tow_dof_motion__rosidl_typesupport_introspection_cpp\n'}
+[32.849165] (-) TimerEvent: {}
+[32.949833] (-) TimerEvent: {}
+[32.993147] (tow_dof_motion) StdoutLine: {'line': b'[ 67%] Built target tow_dof_motion__rosidl_typesupport_introspection_c\n'}
+[33.049992] (-) TimerEvent: {}
+[33.150665] (-) TimerEvent: {}
+[33.251245] (-) TimerEvent: {}
+[33.296936] (tow_dof_motion) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[33.351382] (-) TimerEvent: {}
+[33.452022] (-) TimerEvent: {}
+[33.552795] (-) TimerEvent: {}
+[33.572745] (tow_dof_motion) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[33.610625] (tow_dof_motion) StdoutLine: {'line': b'[ 72%] Built target tow_dof_motion__rosidl_typesupport_fastrtps_c\n'}
+[33.652924] (-) TimerEvent: {}
+[33.753535] (-) TimerEvent: {}
+[33.854069] (-) TimerEvent: {}
+[33.869792] (tow_dof_motion) StdoutLine: {'line': b'[ 72%] Built target tow_dof_motion__rosidl_typesupport_fastrtps_cpp\n'}
+[33.954215] (-) TimerEvent: {}
+[34.022551] (tow_dof_motion) StdoutLine: {'line': b'[ 72%] Built target tow_dof_motion\n'}
+[34.054345] (-) TimerEvent: {}
+[34.154857] (-) TimerEvent: {}
+[34.169987] (tow_dof_motion) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[34.254993] (-) TimerEvent: {}
+[34.355519] (-) TimerEvent: {}
+[34.456177] (-) TimerEvent: {}
+[34.556933] (-) TimerEvent: {}
+[34.657625] (-) TimerEvent: {}
+[34.758393] (-) TimerEvent: {}
+[34.859028] (-) TimerEvent: {}
+[34.959826] (-) TimerEvent: {}
+[35.060467] (-) TimerEvent: {}
+[35.161059] (-) TimerEvent: {}
+[35.227219] (tow_dof_motion) StdoutLine: {'line': b'[ 74%] Built target tow_dof_motion__py\n'}
+[35.261207] (-) TimerEvent: {}
+[35.361898] (-) TimerEvent: {}
+[35.409493] (tow_dof_motion) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_py.dir/rosidl_generator_py/tow_dof_motion/msg/_joint_command_s.c.o\x1b[0m\n'}
+[35.411210] (tow_dof_motion) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_py.dir/rosidl_generator_py/tow_dof_motion/srv/_setfloat64_s.c.o\x1b[0m\n'}
+[35.462035] (-) TimerEvent: {}
+[35.562644] (-) TimerEvent: {}
+[35.663170] (-) TimerEvent: {}
+[35.763752] (-) TimerEvent: {}
+[35.864404] (-) TimerEvent: {}
+[35.901895] (tow_dof_motion) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tow_dof_motion/libtow_dof_motion__rosidl_generator_py.so\x1b[0m\n'}
+[35.964567] (-) TimerEvent: {}
+[36.065375] (-) TimerEvent: {}
+[36.166403] (-) TimerEvent: {}
+[36.247731] (tow_dof_motion) StdoutLine: {'line': b'[ 81%] Built target tow_dof_motion__rosidl_generator_py\n'}
+[36.266540] (-) TimerEvent: {}
+[36.367289] (-) TimerEvent: {}
+[36.390187] (tow_dof_motion) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[36.396232] (tow_dof_motion) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[36.426182] (tow_dof_motion) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[36.467445] (-) TimerEvent: {}
+[36.568084] (-) TimerEvent: {}
+[36.668755] (-) TimerEvent: {}
+[36.769372] (-) TimerEvent: {}
+[36.870166] (-) TimerEvent: {}
+[36.961056] (tow_dof_motion) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[36.970315] (-) TimerEvent: {}
+[36.992223] (tow_dof_motion) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[37.005973] (tow_dof_motion) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[37.070443] (-) TimerEvent: {}
+[37.171107] (-) TimerEvent: {}
+[37.260762] (tow_dof_motion) StdoutLine: {'line': b'[ 95%] Built target tow_dof_motion__rosidl_typesupport_c__pyext\n'}
+[37.269694] (tow_dof_motion) StdoutLine: {'line': b'[ 95%] Built target tow_dof_motion__rosidl_typesupport_introspection_c__pyext\n'}
+[37.271209] (-) TimerEvent: {}
+[37.317783] (tow_dof_motion) StdoutLine: {'line': b'[ 95%] Built target tow_dof_motion__rosidl_typesupport_fastrtps_c__pyext\n'}
+[37.371366] (-) TimerEvent: {}
+[37.472017] (-) TimerEvent: {}
+[37.572829] (-) TimerEvent: {}
+[37.673543] (-) TimerEvent: {}
+[37.774284] (-) TimerEvent: {}
+[37.875127] (-) TimerEvent: {}
+[37.975919] (-) TimerEvent: {}
+[38.076591] (-) TimerEvent: {}
+[38.177449] (-) TimerEvent: {}
+[38.278193] (-) TimerEvent: {}
+[38.378947] (-) TimerEvent: {}
+[38.479550] (-) TimerEvent: {}
+[38.580140] (-) TimerEvent: {}
+[38.680864] (-) TimerEvent: {}
+[38.781640] (-) TimerEvent: {}
+[38.882341] (-) TimerEvent: {}
+[38.982940] (-) TimerEvent: {}
+[39.083674] (-) TimerEvent: {}
+[39.184433] (-) TimerEvent: {}
+[39.285130] (-) TimerEvent: {}
+[39.385934] (-) TimerEvent: {}
+[39.486634] (-) TimerEvent: {}
+[39.587297] (-) TimerEvent: {}
+[39.687867] (-) TimerEvent: {}
+[39.788397] (-) TimerEvent: {}
+[39.888904] (-) TimerEvent: {}
+[39.905822] (tow_dof_motion) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable motion_node\x1b[0m\n'}
+[39.989026] (-) TimerEvent: {}
+[40.089575] (-) TimerEvent: {}
+[40.190161] (-) TimerEvent: {}
+[40.290939] (-) TimerEvent: {}
+[40.391610] (-) TimerEvent: {}
+[40.492208] (-) TimerEvent: {}
+[40.592739] (-) TimerEvent: {}
+[40.693226] (-) TimerEvent: {}
+[40.793694] (-) TimerEvent: {}
+[40.894180] (-) TimerEvent: {}
+[40.994657] (-) TimerEvent: {}
+[41.027763] (tow_dof_motion) StdoutLine: {'line': b'[ 97%] Built target motion_node\n'}
+[41.094825] (-) TimerEvent: {}
+[41.195609] (-) TimerEvent: {}
+[41.296380] (-) TimerEvent: {}
+[41.397119] (-) TimerEvent: {}
+[41.497901] (-) TimerEvent: {}
+[41.598516] (-) TimerEvent: {}
+[41.699314] (-) TimerEvent: {}
+[41.800046] (-) TimerEvent: {}
+[41.900535] (-) TimerEvent: {}
+[42.001348] (-) TimerEvent: {}
+[42.102139] (-) TimerEvent: {}
+[42.202799] (-) TimerEvent: {}
+[42.303423] (-) TimerEvent: {}
+[42.404314] (-) TimerEvent: {}
+[42.505009] (-) TimerEvent: {}
+[42.605828] (-) TimerEvent: {}
+[42.706597] (-) TimerEvent: {}
+[42.807398] (-) TimerEvent: {}
+[42.908214] (-) TimerEvent: {}
+[43.009049] (-) TimerEvent: {}
+[43.109831] (-) TimerEvent: {}
+[43.210388] (-) TimerEvent: {}
+[43.310935] (-) TimerEvent: {}
+[43.411551] (-) TimerEvent: {}
+[43.512258] (-) TimerEvent: {}
+[43.612911] (-) TimerEvent: {}
+[43.713518] (-) TimerEvent: {}
+[43.814247] (-) TimerEvent: {}
+[43.914823] (-) TimerEvent: {}
+[44.015474] (-) TimerEvent: {}
+[44.116173] (-) TimerEvent: {}
+[44.216866] (-) TimerEvent: {}
+[44.317511] (-) TimerEvent: {}
+[44.418142] (-) TimerEvent: {}
+[44.518712] (-) TimerEvent: {}
+[44.619422] (-) TimerEvent: {}
+[44.719928] (-) TimerEvent: {}
+[44.752716] (tow_dof_motion) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable move_to_position\x1b[0m\n'}
+[44.820079] (-) TimerEvent: {}
+[44.920658] (-) TimerEvent: {}
+[45.021281] (-) TimerEvent: {}
+[45.121739] (-) TimerEvent: {}
+[45.222607] (-) TimerEvent: {}
+[45.323456] (-) TimerEvent: {}
+[45.424266] (-) TimerEvent: {}
+[45.524791] (-) TimerEvent: {}
+[45.625400] (-) TimerEvent: {}
+[45.725877] (-) TimerEvent: {}
+[45.826319] (-) TimerEvent: {}
+[45.926806] (-) TimerEvent: {}
+[45.962608] (tow_dof_motion) StdoutLine: {'line': b'[100%] Built target move_to_position\n'}
+[46.026950] (-) TimerEvent: {}
+[46.084896] (tow_dof_motion) CommandEnded: {'returncode': 0}
+[46.127070] (-) TimerEvent: {}
+[46.227511] (-) TimerEvent: {}
+[46.327943] (-) TimerEvent: {}
+[46.428381] (-) TimerEvent: {}
+[46.528916] (-) TimerEvent: {}
+[46.629712] (-) TimerEvent: {}
+[46.730374] (-) TimerEvent: {}
+[46.831710] (-) TimerEvent: {}
+[46.932495] (-) TimerEvent: {}
+[47.033069] (-) TimerEvent: {}
+[47.133569] (-) TimerEvent: {}
+[47.228813] (tow_dof_motion) JobProgress: {'identifier': 'tow_dof_motion', 'progress': 'install'}
+[47.233654] (tow_dof_motion) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ros/tow_dof_ws/build/tow_dof_motion'], 'cwd': '/home/ros/tow_dof_ws/build/tow_dof_motion', 'env': OrderedDict([('HOSTNAME', '6397a45f063c'), ('GIT_ASKPASS', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/ros/tow_dof_ws/install/tow_dof_motion/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/home/ros/tow_dof_ws/src/tow_dof_moveit_config/launch'), ('TERM_PROGRAM_VERSION', '1.97.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-f0e18700-cc3d-4428-a7dc-535ca66e1126.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('COLCON_PREFIX_PATH', '/home/ros/tow_dof_ws/install:/home/ros/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-bd8e199e-1235-4f0a-b026-9b5d42930f0c.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/ros/.vscode-server/bin/33fc5a94a3f99ebe7087e8fe79fbe1d37a251016/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X7","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':7'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-f383cbc65d.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/ros/tow_dof_ws/install/xacro_converter:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X7'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/ros/tow_dof_ws/build/tow_dof_motion'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/home/ros/tow_dof_ws/build/xacro_converter:/home/ros/tow_dof_ws/install/xacro_converter/lib/python3.10/site-packages:/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble')]), 'shell': False}
+[47.235014] (-) TimerEvent: {}
+[47.254504] (tow_dof_motion) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[47.262942] (tow_dof_motion) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[47.290536] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/rosidl_interfaces/tow_dof_motion\n'}
+[47.335217] (-) TimerEvent: {}
+[47.425610] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__functions.h\n'}
+[47.435333] (-) TimerEvent: {}
+[47.479780] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__struct.h\n'}
+[47.532861] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__type_support.h\n'}
+[47.535415] (-) TimerEvent: {}
+[47.586390] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/joint_command.h\n'}
+[47.635563] (-) TimerEvent: {}
+[47.637588] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_generator_c__visibility_control.h\n'}
+[47.702866] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__functions.h\n'}
+[47.735694] (-) TimerEvent: {}
+[47.755565] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__struct.h\n'}
+[47.811440] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__type_support.h\n'}
+[47.835838] (-) TimerEvent: {}
+[47.870289] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/setfloat64.h\n'}
+[47.920438] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/library_path.sh\n'}
+[47.935950] (-) TimerEvent: {}
+[47.965262] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/library_path.dsv\n'}
+[48.036077] (-) TimerEvent: {}
+[48.089328] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_fastrtps_c.h\n'}
+[48.136200] (-) TimerEvent: {}
+[48.140513] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[48.202520] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_fastrtps_c.h\n'}
+[48.236322] (-) TimerEvent: {}
+[48.331749] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__builder.hpp\n'}
+[48.336475] (-) TimerEvent: {}
+[48.401144] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__struct.hpp\n'}
+[48.436602] (-) TimerEvent: {}
+[48.461535] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__traits.hpp\n'}
+[48.524236] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/joint_command.hpp\n'}
+[48.536731] (-) TimerEvent: {}
+[48.577793] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__builder.hpp\n'}
+[48.633752] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__struct.hpp\n'}
+[48.636821] (-) TimerEvent: {}
+[48.698674] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__traits.hpp\n'}
+[48.736956] (-) TimerEvent: {}
+[48.760182] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/setfloat64.hpp\n'}
+[48.837081] (-) TimerEvent: {}
+[48.936238] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[48.937152] (-) TimerEvent: {}
+[48.996080] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[49.037315] (-) TimerEvent: {}
+[49.045627] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[49.137454] (-) TimerEvent: {}
+[49.140597] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_introspection_c.h\n'}
+[49.200085] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[49.237567] (-) TimerEvent: {}
+[49.252398] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_introspection_c.h\n'}
+[49.337727] (-) TimerEvent: {}
+[49.358995] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[49.416797] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_introspection_cpp.hpp\n'}
+[49.437851] (-) TimerEvent: {}
+[49.469952] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/pythonpath.sh\n'}
+[49.519190] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/pythonpath.dsv\n'}
+[49.537979] (-) TimerEvent: {}
+[49.592558] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[49.638101] (-) TimerEvent: {}
+[49.644849] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[49.700169] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[49.738224] (-) TimerEvent: {}
+[49.755316] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[49.838394] (-) TimerEvent: {}
+[49.938885] (-) TimerEvent: {}
+[50.018103] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/__init__.py\n'}
+[50.039013] (-) TimerEvent: {}
+[50.071422] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_c.c\n'}
+[50.124553] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[50.139124] (-) TimerEvent: {}
+[50.178578] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[50.232651] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/libtow_dof_motion__rosidl_generator_py.so\n'}
+[50.239249] (-) TimerEvent: {}
+[50.303932] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/__init__.py\n'}
+[50.339396] (-) TimerEvent: {}
+[50.362425] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/_joint_command.py\n'}
+[50.427974] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/_joint_command_s.c\n'}
+[50.439598] (-) TimerEvent: {}
+[50.511246] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/__init__.py\n'}
+[50.539711] (-) TimerEvent: {}
+[50.571880] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/_setfloat64.py\n'}
+[50.634396] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/_setfloat64_s.c\n'}
+[50.639832] (-) TimerEvent: {}
+[50.693314] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.740020] (-) TimerEvent: {}
+[50.752563] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.811049] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.840139] (-) TimerEvent: {}
+[50.893236] (tow_dof_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.928730] (tow_dof_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.940257] (-) TimerEvent: {}
+[50.964275] (tow_dof_motion) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[50.980420] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/msg/JointCommand.idl\n'}
+[51.036569] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64.idl\n'}
+[51.040372] (-) TimerEvent: {}
+[51.090105] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/msg/JointCommand.msg\n'}
+[51.140489] (-) TimerEvent: {}
+[51.150678] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64.srv\n'}
+[51.202125] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64_Request.msg\n'}
+[51.240646] (-) TimerEvent: {}
+[51.264052] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64_Response.msg\n'}
+[51.319005] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/tow_dof_motion/motion_node\n'}
+[51.340788] (-) TimerEvent: {}
+[51.441422] (-) TimerEvent: {}
+[51.445180] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/tow_dof_motion/move_to_position\n'}
+[51.541550] (-) TimerEvent: {}
+[51.572619] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/package_run_dependencies/tow_dof_motion\n'}
+[51.641672] (-) TimerEvent: {}
+[51.694144] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/parent_prefix_path/tow_dof_motion\n'}
+[51.741798] (-) TimerEvent: {}
+[51.808122] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/ament_prefix_path.sh\n'}
+[51.841938] (-) TimerEvent: {}
+[51.894452] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/ament_prefix_path.dsv\n'}
+[51.942073] (-) TimerEvent: {}
+[51.962960] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/path.sh\n'}
+[52.042194] (-) TimerEvent: {}
+[52.072406] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/path.dsv\n'}
+[52.142358] (-) TimerEvent: {}
+[52.242952] (-) TimerEvent: {}
+[52.258100] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.bash\n'}
+[52.343109] (-) TimerEvent: {}
+[52.417815] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.sh\n'}
+[52.443268] (-) TimerEvent: {}
+[52.535094] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.zsh\n'}
+[52.543406] (-) TimerEvent: {}
+[52.641572] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.dsv\n'}
+[52.643515] (-) TimerEvent: {}
+[52.743987] (-) TimerEvent: {}
+[52.748895] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/package.dsv\n'}
+[52.844112] (-) TimerEvent: {}
+[52.869613] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/packages/tow_dof_motion\n'}
+[52.944244] (-) TimerEvent: {}
+[52.974207] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/rosidl_cmake-extras.cmake\n'}
+[53.044358] (-) TimerEvent: {}
+[53.084385] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[53.144516] (-) TimerEvent: {}
+[53.242009] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[53.244629] (-) TimerEvent: {}
+[53.345123] (-) TimerEvent: {}
+[53.379857] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[53.445298] (-) TimerEvent: {}
+[53.536112] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[53.545422] (-) TimerEvent: {}
+[53.645889] (-) TimerEvent: {}
+[53.657475] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[53.746024] (-) TimerEvent: {}
+[53.774758] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[53.846173] (-) TimerEvent: {}
+[53.887459] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motionConfig.cmake\n'}
+[53.946299] (-) TimerEvent: {}
+[53.995260] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motionConfig-version.cmake\n'}
+[54.046437] (-) TimerEvent: {}
+[54.116702] (tow_dof_motion) StdoutLine: {'line': b'-- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/package.xml\n'}
+[54.146562] (-) TimerEvent: {}
+[54.226822] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_c.so\n'}
+[54.246722] (-) TimerEvent: {}
+[54.301867] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_c.so" to ""\n'}
+[54.314047] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_c.so\n'}
+[54.346873] (-) TimerEvent: {}
+[54.385281] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[54.397300] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_cpp.so\n'}
+[54.447012] (-) TimerEvent: {}
+[54.474293] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[54.489006] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_c.so\n'}
+[54.547175] (-) TimerEvent: {}
+[54.555478] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_c.so" to ""\n'}
+[54.568745] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_c.so\n'}
+[54.640331] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_c.so" to ""\n'}
+[54.647319] (-) TimerEvent: {}
+[54.654127] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_cpp.so\n'}
+[54.736758] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[54.747452] (-) TimerEvent: {}
+[54.748755] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_cpp.so\n'}
+[54.829651] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_cpp.so" to ""\n'}
+[54.847642] (-) TimerEvent: {}
+[54.948295] (-) TimerEvent: {}
+[55.048859] (-) TimerEvent: {}
+[55.149384] (-) TimerEvent: {}
+[55.250000] (-) TimerEvent: {}
+[55.350532] (-) TimerEvent: {}
+[55.451013] (-) TimerEvent: {}
+[55.523290] (tow_dof_motion) StdoutLine: {'line': b"Listing '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion'...\n"}
+[55.524068] (tow_dof_motion) StdoutLine: {'line': b"Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/__init__.py'...\n"}
+[55.524736] (tow_dof_motion) StdoutLine: {'line': b"Listing '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg'...\n"}
+[55.525383] (tow_dof_motion) StdoutLine: {'line': b"Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/__init__.py'...\n"}
+[55.526156] (tow_dof_motion) StdoutLine: {'line': b"Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/_joint_command.py'...\n"}
+[55.526813] (tow_dof_motion) StdoutLine: {'line': b"Listing '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv'...\n"}
+[55.527436] (tow_dof_motion) StdoutLine: {'line': b"Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/__init__.py'...\n"}
+[55.528036] (tow_dof_motion) StdoutLine: {'line': b"Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/_setfloat64.py'...\n"}
+[55.541328] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_py.so\n'}
+[55.551124] (-) TimerEvent: {}
+[55.623446] (tow_dof_motion) StdoutLine: {'line': b'-- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_py.so" to ""\n'}
+[55.647344] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_cExport.cmake\n'}
+[55.651251] (-) TimerEvent: {}
+[55.751803] (-) TimerEvent: {}
+[55.782252] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_cExport-noconfig.cmake\n'}
+[55.849504] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[55.851894] (-) TimerEvent: {}
+[55.915793] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[55.952027] (-) TimerEvent: {}
+[55.988557] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_cppExport.cmake\n'}
+[56.052146] (-) TimerEvent: {}
+[56.063675] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[56.133701] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[56.152269] (-) TimerEvent: {}
+[56.203567] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cExport.cmake\n'}
+[56.252401] (-) TimerEvent: {}
+[56.274218] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[56.341261] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cExport.cmake\n'}
+[56.352533] (-) TimerEvent: {}
+[56.416735] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[56.452641] (-) TimerEvent: {}
+[56.489385] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[56.552757] (-) TimerEvent: {}
+[56.560426] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[56.639950] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cppExport.cmake\n'}
+[56.652895] (-) TimerEvent: {}
+[56.708119] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[56.753005] (-) TimerEvent: {}
+[56.781710] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_pyExport.cmake\n'}
+[56.850092] (tow_dof_motion) StdoutLine: {'line': b'-- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_pyExport-noconfig.cmake\n'}
+[56.853090] (-) TimerEvent: {}
+[56.910463] (tow_dof_motion) CommandEnded: {'returncode': 0}
+[56.953212] (-) TimerEvent: {}
+[57.053652] (-) TimerEvent: {}
+[57.160659] (-) TimerEvent: {}
+[57.261094] (-) TimerEvent: {}
+[57.373211] (-) TimerEvent: {}
+[57.473750] (-) TimerEvent: {}
+[57.574212] (-) TimerEvent: {}
+[57.675017] (-) TimerEvent: {}
+[57.775514] (-) TimerEvent: {}
+[57.875956] (-) TimerEvent: {}
+[57.976471] (-) TimerEvent: {}
+[58.076903] (-) TimerEvent: {}
+[58.177356] (-) TimerEvent: {}
+[58.277798] (-) TimerEvent: {}
+[58.378283] (-) TimerEvent: {}
+[58.478788] (-) TimerEvent: {}
+[58.579326] (-) TimerEvent: {}
+[58.679953] (-) TimerEvent: {}
+[58.780417] (-) TimerEvent: {}
+[58.881098] (-) TimerEvent: {}
+[58.981604] (-) TimerEvent: {}
+[59.082232] (-) TimerEvent: {}
+[59.182674] (-) TimerEvent: {}
+[59.283151] (-) TimerEvent: {}
+[59.383660] (-) TimerEvent: {}
+[59.484220] (-) TimerEvent: {}
+[59.584687] (-) TimerEvent: {}
+[59.685178] (-) TimerEvent: {}
+[59.785899] (-) TimerEvent: {}
+[59.886513] (-) TimerEvent: {}
+[59.986959] (-) TimerEvent: {}
+[60.087439] (-) TimerEvent: {}
+[60.187936] (-) TimerEvent: {}
+[60.298893] (-) TimerEvent: {}
+[60.399336] (-) TimerEvent: {}
+[60.499809] (-) TimerEvent: {}
+[60.600274] (-) TimerEvent: {}
+[60.700774] (-) TimerEvent: {}
+[60.744099] (tow_dof_motion) JobEnded: {'identifier': 'tow_dof_motion', 'rc': 0}
+[60.752345] (-) EventReactorShutdown: {}

@@ -1,0 +1,11 @@
+source;share/tow_dof_motion/hook/cmake_prefix_path.ps1
+source;share/tow_dof_motion/hook/cmake_prefix_path.dsv
+source;share/tow_dof_motion/hook/cmake_prefix_path.sh
+source;share/tow_dof_motion/hook/ld_library_path_lib.ps1
+source;share/tow_dof_motion/hook/ld_library_path_lib.dsv
+source;share/tow_dof_motion/hook/ld_library_path_lib.sh
+source;share/tow_dof_motion/local_setup.bash
+source;share/tow_dof_motion/local_setup.dsv
+source;share/tow_dof_motion/local_setup.ps1
+source;share/tow_dof_motion/local_setup.sh
+source;share/tow_dof_motion/local_setup.zsh

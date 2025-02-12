@@ -1,0 +1,291 @@
+[0.068s] Invoking command in '/home/ros/tow_dof_ws/build/tow_dof_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake /home/ros/tow_dof_ws/src/tow_dof_motion -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/tow_dof_ws/install/tow_dof_motion
+[0.396s] -- The C compiler identification is GNU 11.4.0
+[0.633s] -- The CXX compiler identification is GNU 11.4.0
+[0.695s] -- Detecting C compiler ABI info
+[1.382s] -- Detecting C compiler ABI info - done
+[1.408s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.409s] -- Detecting C compile features
+[1.410s] -- Detecting C compile features - done
+[1.456s] -- Detecting CXX compiler ABI info
+[2.047s] -- Detecting CXX compiler ABI info - done
+[2.107s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.108s] -- Detecting CXX compile features
+[2.109s] -- Detecting CXX compile features - done
+[2.179s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.478s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.627s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.786s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.882s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.894s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.911s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.935s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.967s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.062s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.073s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.561s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.649s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.733s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.778s] -- Looking for pthread.h
+[4.296s] -- Looking for pthread.h - found
+[4.306s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.905s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.911s] -- Found Threads: TRUE  
+[5.132s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[5.212s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.263s] -- Found moveit_ros_planning_interface: 2.5.7 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[5.407s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[5.843s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[6.463s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[6.610s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.648s] -- Found rclcpp_lifecycle: 16.0.10 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[6.795s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[7.434s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[7.587s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[8.338s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[8.449s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[8.565s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[8.700s] -- Found moveit_visual_tools: 4.1.1 (/opt/ros/humble/share/moveit_visual_tools/cmake)
+[9.122s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[9.233s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[9.237s] -- Found OGRE
+[9.237s] --   static     : OFF
+[9.238s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[9.239s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[9.239s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[9.240s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[9.241s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[9.241s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[9.242s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[9.242s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[9.243s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[9.244s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[9.244s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[9.445s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[9.495s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[10.125s] -- Found X11: /usr/include   
+[10.126s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[10.650s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[10.653s] -- Looking for gethostbyname
+[11.125s] -- Looking for gethostbyname - found
+[11.129s] -- Looking for connect
+[11.647s] -- Looking for connect - found
+[11.650s] -- Looking for remove
+[12.247s] -- Looking for remove - found
+[12.251s] -- Looking for shmat
+[12.799s] -- Looking for shmat - found
+[12.803s] -- Looking for IceConnectionNumber in ICE
+[13.344s] -- Looking for IceConnectionNumber in ICE - found
+[15.717s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[21.218s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[23.508s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[23.589s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[23.655s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[23.777s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[23.778s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[23.779s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[23.780s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[23.820s] -- Found PythonExtra: .so  
+[25.974s] -- Configuring done
+[28.160s] -- Generating done
+[28.415s] -- Build files have been written to: /home/ros/tow_dof_ws/build/tow_dof_motion
+[28.440s] Invoked command in '/home/ros/tow_dof_ws/build/tow_dof_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake /home/ros/tow_dof_ws/src/tow_dof_motion -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/tow_dof_ws/install/tow_dof_motion
+[28.458s] Invoking command in '/home/ros/tow_dof_ws/build/tow_dof_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --build /home/ros/tow_dof_ws/build/tow_dof_motion -- -j8 -l8
+[28.746s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[28.783s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[28.792s] [  4%] Built target ament_cmake_python_symlink_tow_dof_motion
+[29.287s] running egg_info
+[29.288s] creating tow_dof_motion.egg-info
+[29.291s] writing tow_dof_motion.egg-info/PKG-INFO
+[29.295s] writing dependency_links to tow_dof_motion.egg-info/dependency_links.txt
+[29.302s] writing top-level names to tow_dof_motion.egg-info/top_level.txt
+[29.307s] writing manifest file 'tow_dof_motion.egg-info/SOURCES.txt'
+[29.335s] reading manifest file 'tow_dof_motion.egg-info/SOURCES.txt'
+[29.361s] writing manifest file 'tow_dof_motion.egg-info/SOURCES.txt'
+[29.452s] [  4%] Built target ament_cmake_python_build_tow_dof_motion_egg
+[29.499s] [  4%] Built target tow_dof_motion__cpp
+[29.560s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[29.569s] [ 11%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[29.571s] [ 11%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[29.644s] [ 13%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_c.dir/rosidl_generator_c/tow_dof_motion/msg/detail/joint_command__functions.c.o[0m
+[29.657s] [ 16%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_c.dir/rosidl_generator_c/tow_dof_motion/srv/detail/setfloat64__functions.c.o[0m
+[29.933s] [ 18%] [32m[1mLinking C shared library libtow_dof_motion__rosidl_generator_c.so[0m
+[30.160s] [ 18%] Built target tow_dof_motion__rosidl_generator_c
+[30.237s] [ 20%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tow_dof_motion/msg/joint_command__type_support.cpp.o[0m
+[30.242s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[30.243s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[30.257s] [ 30%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tow_dof_motion/srv/setfloat64__type_support.cpp.o[0m
+[30.259s] [ 30%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[30.482s] [ 32%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tow_dof_motion/srv/detail/setfloat64__type_support.cpp.o[0m
+[30.506s] [ 34%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tow_dof_motion/msg/detail/joint_command__type_support.cpp.o[0m
+[30.625s] [ 37%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tow_dof_motion/msg/detail/dds_fastrtps/joint_command__type_support.cpp.o[0m
+[31.189s] [ 39%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_c.dir/rosidl_typesupport_c/tow_dof_motion/msg/joint_command__type_support.cpp.o[0m
+[31.303s] [ 41%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_c.dir/rosidl_typesupport_c/tow_dof_motion/srv/setfloat64__type_support.cpp.o[0m
+[31.361s] [ 44%] [32m[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_cpp.so[0m
+[31.492s] [ 46%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tow_dof_motion/msg/detail/joint_command__type_support.c.o[0m
+[31.518s] [ 48%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tow_dof_motion/msg/detail/joint_command__type_support_c.cpp.o[0m
+[31.555s] [ 51%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tow_dof_motion/srv/detail/setfloat64__type_support_c.cpp.o[0m
+[31.680s] [ 53%] [32m[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_c.so[0m
+[31.682s] [ 53%] Built target tow_dof_motion__rosidl_typesupport_cpp
+[31.739s] [ 55%] [32mBuilding CXX object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tow_dof_motion/srv/detail/dds_fastrtps/setfloat64__type_support.cpp.o[0m
+[31.998s] [ 58%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tow_dof_motion/srv/detail/setfloat64__type_support.c.o[0m
+[32.035s] [ 58%] Built target tow_dof_motion__rosidl_typesupport_c
+[32.241s] [ 60%] [32m[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_introspection_cpp.so[0m
+[32.339s] [ 62%] [32mBuilding CXX object CMakeFiles/motion_node.dir/src/motion_node.cpp.o[0m
+[32.403s] [ 65%] [32mBuilding CXX object CMakeFiles/move_to_position.dir/src/move_to_position.cpp.o[0m
+[32.645s] [ 67%] [32m[1mLinking C shared library libtow_dof_motion__rosidl_typesupport_introspection_c.so[0m
+[32.757s] [ 67%] Built target tow_dof_motion__rosidl_typesupport_introspection_cpp
+[32.959s] [ 67%] Built target tow_dof_motion__rosidl_typesupport_introspection_c
+[33.263s] [ 69%] [32m[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_fastrtps_c.so[0m
+[33.539s] [ 72%] [32m[1mLinking CXX shared library libtow_dof_motion__rosidl_typesupport_fastrtps_cpp.so[0m
+[33.577s] [ 72%] Built target tow_dof_motion__rosidl_typesupport_fastrtps_c
+[33.836s] [ 72%] Built target tow_dof_motion__rosidl_typesupport_fastrtps_cpp
+[33.988s] [ 72%] Built target tow_dof_motion
+[34.136s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[35.193s] [ 74%] Built target tow_dof_motion__py
+[35.376s] [ 79%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_py.dir/rosidl_generator_py/tow_dof_motion/msg/_joint_command_s.c.o[0m
+[35.377s] [ 79%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_generator_py.dir/rosidl_generator_py/tow_dof_motion/srv/_setfloat64_s.c.o[0m
+[35.868s] [ 81%] [32m[1mLinking C shared library rosidl_generator_py/tow_dof_motion/libtow_dof_motion__rosidl_generator_py.so[0m
+[36.214s] [ 81%] Built target tow_dof_motion__rosidl_generator_py
+[36.356s] [ 83%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[36.362s] [ 86%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[36.392s] [ 88%] [32mBuilding C object CMakeFiles/tow_dof_motion__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_c.c.o[0m
+[36.927s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[36.959s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[36.972s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[37.227s] [ 95%] Built target tow_dof_motion__rosidl_typesupport_c__pyext
+[37.236s] [ 95%] Built target tow_dof_motion__rosidl_typesupport_introspection_c__pyext
+[37.284s] [ 95%] Built target tow_dof_motion__rosidl_typesupport_fastrtps_c__pyext
+[39.872s] [ 97%] [32m[1mLinking CXX executable motion_node[0m
+[40.994s] [ 97%] Built target motion_node
+[44.719s] [100%] [32m[1mLinking CXX executable move_to_position[0m
+[45.928s] [100%] Built target move_to_position
+[46.051s] Invoked command in '/home/ros/tow_dof_ws/build/tow_dof_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --build /home/ros/tow_dof_ws/build/tow_dof_motion -- -j8 -l8
+[47.200s] Invoking command in '/home/ros/tow_dof_ws/build/tow_dof_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --install /home/ros/tow_dof_ws/build/tow_dof_motion
+[47.220s] -- Install configuration: ""
+[47.229s] -- Execute custom install script
+[47.257s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/rosidl_interfaces/tow_dof_motion
+[47.391s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__functions.h
+[47.446s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__struct.h
+[47.499s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__type_support.h
+[47.552s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/joint_command.h
+[47.603s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_generator_c__visibility_control.h
+[47.669s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__functions.h
+[47.721s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__struct.h
+[47.777s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__type_support.h
+[47.836s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/setfloat64.h
+[47.886s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/library_path.sh
+[47.931s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/library_path.dsv
+[48.055s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_fastrtps_c.h
+[48.106s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[48.168s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_fastrtps_c.h
+[48.298s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__builder.hpp
+[48.367s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__struct.hpp
+[48.427s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__traits.hpp
+[48.490s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/joint_command.hpp
+[48.544s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__builder.hpp
+[48.600s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__struct.hpp
+[48.665s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__traits.hpp
+[48.726s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/setfloat64.hpp
+[48.902s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_fastrtps_cpp.hpp
+[48.962s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[49.012s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_fastrtps_cpp.hpp
+[49.107s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_introspection_c.h
+[49.166s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[49.218s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_introspection_c.h
+[49.325s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/msg/detail/joint_command__rosidl_typesupport_introspection_cpp.hpp
+[49.383s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/include/tow_dof_motion/tow_dof_motion/srv/detail/setfloat64__rosidl_typesupport_introspection_cpp.hpp
+[49.436s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/pythonpath.sh
+[49.485s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/pythonpath.dsv
+[49.558s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/PKG-INFO
+[49.611s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/SOURCES.txt
+[49.666s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/dependency_links.txt
+[49.721s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion-0.0.1-py3.10.egg-info/top_level.txt
+[49.984s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/__init__.py
+[50.037s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_c.c
+[50.090s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_fastrtps_c.c
+[50.144s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/_tow_dof_motion_s.ep.rosidl_typesupport_introspection_c.c
+[50.199s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/libtow_dof_motion__rosidl_generator_py.so
+[50.270s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/__init__.py
+[50.328s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/_joint_command.py
+[50.394s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/_joint_command_s.c
+[50.477s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/__init__.py
+[50.538s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/_setfloat64.py
+[50.600s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/_setfloat64_s.c
+[50.659s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[50.718s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[50.777s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[50.859s] -- Up-to-date symlink: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[50.895s] -- Up-to-date symlink: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[50.930s] -- Up-to-date symlink: /home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/tow_dof_motion_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[50.946s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/msg/JointCommand.idl
+[51.002s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64.idl
+[51.056s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/msg/JointCommand.msg
+[51.116s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64.srv
+[51.168s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64_Request.msg
+[51.230s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/srv/Setfloat64_Response.msg
+[51.285s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/tow_dof_motion/motion_node
+[51.411s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/tow_dof_motion/move_to_position
+[51.538s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/package_run_dependencies/tow_dof_motion
+[51.660s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/parent_prefix_path/tow_dof_motion
+[51.774s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/ament_prefix_path.sh
+[51.860s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/ament_prefix_path.dsv
+[51.929s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/path.sh
+[52.038s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/environment/path.dsv
+[52.224s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.bash
+[52.384s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.sh
+[52.501s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.zsh
+[52.607s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/local_setup.dsv
+[52.715s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/package.dsv
+[52.836s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/ament_index/resource_index/packages/tow_dof_motion
+[52.940s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/rosidl_cmake-extras.cmake
+[53.051s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_dependencies-extras.cmake
+[53.208s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_include_directories-extras.cmake
+[53.346s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_libraries-extras.cmake
+[53.502s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/ament_cmake_export_targets-extras.cmake
+[53.623s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[53.741s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[53.853s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motionConfig.cmake
+[53.961s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motionConfig-version.cmake
+[54.083s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/package.xml
+[54.193s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_c.so
+[54.268s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_c.so" to ""
+[54.280s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_c.so
+[54.351s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_c.so" to ""
+[54.363s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_cpp.so
+[54.440s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_fastrtps_cpp.so" to ""
+[54.455s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_c.so
+[54.521s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_c.so" to ""
+[54.535s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_c.so
+[54.606s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_c.so" to ""
+[54.620s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_cpp.so
+[54.703s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_introspection_cpp.so" to ""
+[54.715s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_cpp.so
+[54.796s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_typesupport_cpp.so" to ""
+[55.489s] Listing '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion'...
+[55.490s] Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/__init__.py'...
+[55.490s] Listing '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg'...
+[55.491s] Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/__init__.py'...
+[55.492s] Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/msg/_joint_command.py'...
+[55.493s] Listing '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv'...
+[55.493s] Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/__init__.py'...
+[55.494s] Compiling '/home/ros/tow_dof_ws/install/tow_dof_motion/local/lib/python3.10/dist-packages/tow_dof_motion/srv/_setfloat64.py'...
+[55.507s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_py.so
+[55.589s] -- Set runtime path of "/home/ros/tow_dof_ws/install/tow_dof_motion/lib/libtow_dof_motion__rosidl_generator_py.so" to ""
+[55.613s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_cExport.cmake
+[55.748s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_cExport-noconfig.cmake
+[55.815s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cExport.cmake
+[55.882s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[55.954s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_cppExport.cmake
+[56.030s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cppExport.cmake
+[56.099s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[56.169s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cExport.cmake
+[56.240s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[56.307s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cExport.cmake
+[56.383s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cExport-noconfig.cmake
+[56.455s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cppExport.cmake
+[56.527s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[56.606s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cppExport.cmake
+[56.674s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/tow_dof_motion__rosidl_typesupport_cppExport-noconfig.cmake
+[56.748s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_pyExport.cmake
+[56.816s] -- Installing: /home/ros/tow_dof_ws/install/tow_dof_motion/share/tow_dof_motion/cmake/export_tow_dof_motion__rosidl_generator_pyExport-noconfig.cmake
+[56.877s] Invoked command in '/home/ros/tow_dof_ws/build/tow_dof_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --install /home/ros/tow_dof_ws/build/tow_dof_motion

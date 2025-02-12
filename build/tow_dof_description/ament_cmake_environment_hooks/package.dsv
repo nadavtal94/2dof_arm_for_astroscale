@@ -1,0 +1,4 @@
+source;share/tow_dof_description/local_setup.bash
+source;share/tow_dof_description/local_setup.dsv
+source;share/tow_dof_description/local_setup.sh
+source;share/tow_dof_description/local_setup.zsh

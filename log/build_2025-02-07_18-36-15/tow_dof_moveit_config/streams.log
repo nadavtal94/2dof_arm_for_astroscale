@@ -1,0 +1,61 @@
+[0.084s] Invoking command in '/home/ros/tow_dof_ws/build/tow_dof_moveit_config': CMAKE_PREFIX_PATH=/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake /home/ros/tow_dof_ws/src/tow_dof_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/tow_dof_ws/install/tow_dof_moveit_config
+[0.328s] -- The C compiler identification is GNU 11.4.0
+[0.536s] -- The CXX compiler identification is GNU 11.4.0
+[0.589s] -- Detecting C compiler ABI info
+[1.104s] -- Detecting C compiler ABI info - done
+[1.129s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.131s] -- Detecting C compile features
+[1.132s] -- Detecting C compile features - done
+[1.182s] -- Detecting CXX compiler ABI info
+[1.699s] -- Detecting CXX compiler ABI info - done
+[1.724s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.725s] -- Detecting CXX compile features
+[1.727s] -- Detecting CXX compile features - done
+[1.780s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.023s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.145s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.023s] -- Configuring done
+[3.267s] -- Generating done
+[3.325s] -- Build files have been written to: /home/ros/tow_dof_ws/build/tow_dof_moveit_config
+[3.330s] Invoked command in '/home/ros/tow_dof_ws/build/tow_dof_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake /home/ros/tow_dof_ws/src/tow_dof_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ros/tow_dof_ws/install/tow_dof_moveit_config
+[3.339s] Invoking command in '/home/ros/tow_dof_ws/build/tow_dof_moveit_config': CMAKE_PREFIX_PATH=/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --build /home/ros/tow_dof_ws/build/tow_dof_moveit_config -- -j8 -l8
+[3.446s] Invoked command in '/home/ros/tow_dof_ws/build/tow_dof_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --build /home/ros/tow_dof_ws/build/tow_dof_moveit_config -- -j8 -l8
+[3.539s] Invoking command in '/home/ros/tow_dof_ws/build/tow_dof_moveit_config': CMAKE_PREFIX_PATH=/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --install /home/ros/tow_dof_ws/build/tow_dof_moveit_config
+[3.553s] -- Install configuration: ""
+[3.561s] -- Execute custom install script
+[3.581s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/ament_index/resource_index/package_run_dependencies/tow_dof_moveit_config
+[3.636s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/ament_index/resource_index/parent_prefix_path/tow_dof_moveit_config
+[3.682s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/ament_prefix_path.sh
+[3.716s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/ament_prefix_path.dsv
+[3.754s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/path.sh
+[3.785s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/environment/path.dsv
+[3.817s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.bash
+[3.851s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.sh
+[3.879s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.zsh
+[3.905s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/local_setup.dsv
+[3.938s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/package.dsv
+[3.979s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/ament_index/resource_index/packages/tow_dof_moveit_config
+[4.071s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/cmake/tow_dof_moveit_configConfig.cmake
+[4.103s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/cmake/tow_dof_moveit_configConfig-version.cmake
+[4.136s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/package.xml
+[4.239s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/demo.launch.py
+[4.271s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/move_group.launch.py
+[4.305s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/moveit_rviz.launch.py
+[4.343s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/rsp.launch.py
+[4.389s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/setup_assistant.launch.py
+[4.448s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/spawn_controllers.launch.py
+[4.497s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[4.541s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/launch/warehouse_db.launch.py
+[4.621s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/initial_positions.yaml
+[4.664s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/joint_limits.yaml
+[4.702s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/kinematics.yaml
+[4.753s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/moveit.rviz
+[4.800s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/moveit_controllers.yaml
+[4.849s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/pilz_cartesian_limits.yaml
+[4.893s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/ros2_controllers.yaml
+[4.944s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/sensors_3d.yaml
+[5.000s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/tow_dof.ros2_control.xacro
+[5.046s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/tow_dof.srdf
+[5.085s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/config/tow_dof.urdf.xacro
+[5.124s] -- Symlinking: /home/ros/tow_dof_ws/install/tow_dof_moveit_config/share/tow_dof_moveit_config/.setup_assistant
+[5.159s] Invoked command in '/home/ros/tow_dof_ws/build/tow_dof_moveit_config' returned '0': CMAKE_PREFIX_PATH=/home/ros/tow_dof_ws/install/tow_dof_description:/home/ros/tow_dof_ws/install/tow_dof_moveit_config:/home/ros/tow_dof_ws/install/tow_dof_motion:/home/ros/install/tow_dof_description:/home/ros/tow_dof_ws/install/xacro_converter:/opt/ros/humble /usr/bin/cmake --install /home/ros/tow_dof_ws/build/tow_dof_moveit_config

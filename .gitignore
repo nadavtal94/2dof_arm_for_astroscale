@@ -1,0 +1,6 @@
+.vscode-server/
+.cache/
+.vscode/
+*.db
+*.bin
+*.so

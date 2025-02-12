@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tow_dof_motion/msg/JointCommand.msg
+// generated code does not contain a copyright notice
+
+
+module tow_dof_motion {
+  module msg {
+    struct JointCommand {
+      sequence<double> positions;
+
+      double duration;
+    };
+  };
+};

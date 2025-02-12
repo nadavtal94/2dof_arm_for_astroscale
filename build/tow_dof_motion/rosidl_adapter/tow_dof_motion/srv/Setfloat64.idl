@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tow_dof_motion/srv/Setfloat64.srv
+// generated code does not contain a copyright notice
+
+
+module tow_dof_motion {
+  module srv {
+    struct Setfloat64_Request {
+      double data;
+    };
+    struct Setfloat64_Response {
+      boolean success;
+    };
+  };
+};

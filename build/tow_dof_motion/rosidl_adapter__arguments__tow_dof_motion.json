@@ -1,0 +1,7 @@
+{
+  "package_name": "tow_dof_motion",
+  "non_idl_tuples": [
+    "/home/ros/tow_dof_ws/src/tow_dof_motion:msg/JointCommand.msg",
+    "/home/ros/tow_dof_ws/src/tow_dof_motion:srv/Setfloat64.srv"
+  ]
+}

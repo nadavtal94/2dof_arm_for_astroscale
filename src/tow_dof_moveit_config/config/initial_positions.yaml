@@ -1,0 +1,7 @@
+# Default initial positions for tow_dof's ros2_control fake system
+
+initial_positions:
+  joint1: 0
+  joint2: 0
+  left_gripper_joint: 0
+  right_gripper_joint: 0
